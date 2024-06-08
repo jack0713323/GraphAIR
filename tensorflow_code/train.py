@@ -133,7 +133,7 @@ saver.restore(sess, checkpt_file)
 feed_dict_test = construct_feed_dict(features, support, y_test, test_mask, placeholders)
 test_acc = sess.run(model.accuracy, feed_dict=feed_dict_test)
 
-print('test accuracy: ',test_acc)
+print('test accuracy: ',f"{test_acc:.3f}")
 
 
 
